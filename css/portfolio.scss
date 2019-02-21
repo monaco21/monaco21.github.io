@@ -1,0 +1,453 @@
+$grey_border: #c2c2c2;
+
+html {
+	font-size: 14px;
+}
+
+.copy {
+	line-height: 1;
+	text-align: right;
+}
+#clock {
+	line-height: 2.4rem;
+	letter-spacing: 1px;
+	display: block;
+}
+
+.m-ovh {overflow: hidden;}
+.icon,
+.is-title-vline {
+	//vertical-align: bottom;
+	line-height: 1;
+}
+
+
+.modal {
+	transform: scale(0.1);
+	opacity: 0;
+	transition: all .2s linear;
+
+	&.is-active {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	.modal-card {
+		.modal-card-title {
+			font-size: 1rem;
+		}
+		.modal-card-body {
+			.aja {
+				> p {
+					line-height: 1.7;
+					margin-bottom: 15px;
+				}
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				border-radius: 3px;
+				margin: 20px auto;
+			}
+			ul {
+				list-style: disc;
+				padding-left: 1.5rem;
+			}
+		}
+		footer.modal-card-foot {
+			justify-content: center !important;
+		}
+	}
+}
+
+.loading-spinner {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, .9) url('/img/ajax-loader.gif') 50% 50% no-repeat;
+}
+
+.columns.main {
+	margin-bottom: 0;
+}
+
+//Layout Card
+.card {
+	height: 640px; // mCustomScrollbar setHeight: 640,
+
+	ul {
+		&.menu-list {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+
+			> li {
+				margin-bottom: 13px;
+			}
+
+			> li > a {
+				border: 1px solid rgba(0, 0, 0, 0);
+				border-left: 2px solid $grey_border;
+				font-size: 1.3rem;
+
+				&:hover {
+					border-top: 1px solid $grey_border;
+					border-bottom: 1px solid $grey_border;
+					border-right: 1px solid $grey_border;
+				}
+
+				span {
+					font-size: 1rem;
+				}
+			}
+		}
+
+		&.event-list {
+			display: block;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+
+			.event {
+				>h5 {
+					span {
+						margin-left: 6px;
+					}
+				}
+				> p {
+					font-size: 0.8rem;
+					line-height: 1;
+				}
+				> ul {
+					margin-left: 20px;
+				}
+
+				position: relative;
+				padding: 0 0 20px 25px;
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: 5px;
+					bottom: -10px;
+					left: 4px;
+					width: 2px;
+					background: #c2c2c2;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 5px;
+					left: 0px;
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background: #265CDC;
+				}
+			}
+		}
+	}
+
+	.card-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		&:before {
+			content: "바로연결하기";
+			position: absolute;
+			top: -36px;
+			text-align: center;
+			display: inline-block;
+			left: 0;
+			right: 0;
+		}
+
+		a.kakaome {
+			background: url(/img/me_appicon_kr.png) 0 0 no-repeat;
+			text-indent: -9999px;
+			background-position: center;
+			background-size: 20px;
+		}
+
+		a:hover {
+			background-color: #f8ffd5;
+		}
+	}
+}
+
+
+
+
+.lsk {
+	//article
+	padding: 30px 0;
+
+	.progress {
+		margin-bottom: 0.7rem;
+	}
+
+	.tag {
+		margin-bottom: 10px;
+	}
+
+	&#portfolio {
+
+		//포트폴리오
+		.portfolio {
+			overflow: hidden;
+			padding-left: 2px;
+			padding-right: 2px;
+
+			.mix {
+				float: left;
+				overflow: hidden;
+				width: 31%;
+				margin: 0 8px;
+				border: 0;
+				border-radius: 3px;
+				margin-bottom: 1.6rem;
+				position: relative;
+
+				backface-visibility: hidden;
+				will-change: transform, opacity;
+				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+				transition: translate .18s, box-shadow .18s;
+				cursor: pointer;
+
+				&:hover {
+					box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+				}
+
+				> a {
+					position: absolute;
+					display: block;
+					left: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					z-index: 999;
+					text-indent: -9999px;
+				}
+
+				.thumb-container {
+					overflow: hidden;
+					height: 140px;
+					border-bottom: 1px solid #dddddd;
+					background-size: cover;
+					background-position: top center;
+					img {
+						display: block;
+						max-width: 100%;
+						height: auto;
+					}
+				}
+
+				.portfolio-description {
+					border-top: 1px solid #b9b9b9;
+					padding: 1.2rem .8rem;
+
+					p {
+						line-height: 1.4rem;
+						margin: 0;
+
+						&.ti-subject {
+							color: #343434;
+							height: 40px;
+							font-weight: bold;
+							margin-bottom: 6px;
+							text-overflow: ellipsis;
+						}
+						&.ti-period {
+							font-size: 0.9rem;
+							margin-bottom: 6px;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+.column .is-danger {
+	overflow: hidden;
+}
+
+body {
+	background: linear-gradient(-45deg, #6f8bca, #23D5AB);
+	//background-size: cover;
+	
+//	-webkit-animation: Gradient 120s ease infinite;
+//	-moz-animation: Gradient 120s ease infinite;
+//	animation: Gradient 120s ease infinite;
+//	-webkit-transform: translateZ(0);
+//	-ms-transform: translateZ(0);
+//	transform: translateZ(0);
+
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.hero.is-success {
+	background-color: transparent;
+}
+
+@media (min-width: 1280px) {
+	.lsk#portfolio {
+		.portfolio .mix {
+			width: 31.2%;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.desktop {
+		display: none;
+	}
+}
+
+@media (max-width: 960px) {
+	.lsk#portfolio {
+		.portfolio .mix {
+			width: 30%;
+		}
+	}
+	body.ie .portfolio {
+	max-width: 800px;
+}
+}
+
+
+
+@media (max-width: 850px) {
+	body.ie .portfolio {
+	max-width: 620px;
+}
+	body.ie .buttons.has-addons {display: none;}
+	
+	.lsk#portfolio {
+		.portfolio .mix {
+			width: 47%;
+			display: inline-block;
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+
+	.copy {
+		text-align: center;
+	}
+
+	.modal-card {
+		width: 85%;
+	}
+
+	.card {
+		height: auto;
+
+		.card-image {
+			display: none;
+		}
+
+		.profile {
+			text-align: center;
+			border-top: 3px solid #454545;
+
+			h4 {
+				margin-bottom: 50px;
+			}
+		}
+
+		.content.scrollTo {
+			display: none;
+		}
+
+		.card-footer {
+			margin-top: 30px;
+		}
+
+	}
+}
+
+@media (max-width: 612px) {
+
+	.lsk#portfolio {
+		text-align: center;
+
+		.portfolio .mix {
+			width: 100%;
+			display: inline-block;
+			float: none;
+			overflow: hidden;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+	}
+	.has-pf {
+	text-align: center;
+}
+
+	.lsk#portfolio .portfolio .mix .thumb-container img {
+		width: 100%;
+	}
+}
+
+
+		body.ie .lsk#portfolio .portfolio .mix {
+
+	}
+
+
+
+
+
+
+
+
+
