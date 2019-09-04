@@ -8,13 +8,16 @@ html {
 	line-height: 1;
 	text-align: right;
 }
+
 #clock {
-	line-height: 2.4rem;
 	letter-spacing: 1px;
 	display: block;
 }
 
-.m-ovh {overflow: hidden;}
+.m-ovh {
+	overflow: hidden;
+}
+
 .icon,
 .is-title-vline {
 	//vertical-align: bottom;
@@ -36,6 +39,7 @@ html {
 		.modal-card-title {
 			font-size: 1rem;
 		}
+
 		.modal-card-body {
 			.aja {
 				> p {
@@ -43,17 +47,20 @@ html {
 					margin-bottom: 15px;
 				}
 			}
+
 			img {
 				display: block;
 				max-width: 100%;
 				border-radius: 3px;
 				margin: 20px auto;
 			}
+
 			ul {
 				list-style: disc;
 				padding-left: 1.5rem;
 			}
 		}
+
 		footer.modal-card-foot {
 			justify-content: center !important;
 		}
@@ -112,15 +119,17 @@ html {
 			margin: 0;
 
 			.event {
-				>h5 {
+				> h5 {
 					span {
 						margin-left: 6px;
 					}
 				}
+
 				> p {
 					font-size: 0.8rem;
 					line-height: 1;
 				}
+
 				> ul {
 					margin-left: 20px;
 				}
@@ -241,6 +250,7 @@ html {
 					border-bottom: 1px solid #dddddd;
 					background-size: cover;
 					background-position: top center;
+
 					img {
 						display: block;
 						max-width: 100%;
@@ -263,6 +273,7 @@ html {
 							margin-bottom: 6px;
 							text-overflow: ellipsis;
 						}
+
 						&.ti-period {
 							font-size: 0.9rem;
 							margin-bottom: 6px;
@@ -282,13 +293,13 @@ html {
 body {
 	background: linear-gradient(-45deg, #6f8bca, #23D5AB);
 	//background-size: cover;
-	
-//	-webkit-animation: Gradient 120s ease infinite;
-//	-moz-animation: Gradient 120s ease infinite;
-//	animation: Gradient 120s ease infinite;
-//	-webkit-transform: translateZ(0);
-//	-ms-transform: translateZ(0);
-//	transform: translateZ(0);
+
+	//	-webkit-animation: Gradient 120s ease infinite;
+	//	-moz-animation: Gradient 120s ease infinite;
+	//	animation: Gradient 120s ease infinite;
+	//	-webkit-transform: translateZ(0);
+	//	-ms-transform: translateZ(0);
+	//	transform: translateZ(0);
 
 }
 
@@ -296,9 +307,11 @@ body {
 	0% {
 		background-position: 0% 50%
 	}
+
 	50% {
 		background-position: 100% 50%
 	}
+
 	100% {
 		background-position: 0% 50%
 	}
@@ -308,9 +321,11 @@ body {
 	0% {
 		background-position: 0% 50%
 	}
+
 	50% {
 		background-position: 100% 50%
 	}
+
 	100% {
 		background-position: 0% 50%
 	}
@@ -320,9 +335,11 @@ body {
 	0% {
 		background-position: 0% 50%
 	}
+
 	50% {
 		background-position: 100% 50%
 	}
+
 	100% {
 		background-position: 0% 50%
 	}
@@ -352,19 +369,23 @@ body {
 			width: 30%;
 		}
 	}
+
 	body.ie .portfolio {
-	max-width: 800px;
-}
+		max-width: 800px;
+	}
 }
 
 
 
 @media (max-width: 850px) {
 	body.ie .portfolio {
-	max-width: 620px;
-}
-	body.ie .buttons.has-addons {display: none;}
-	
+		max-width: 620px;
+	}
+
+	body.ie .buttons.has-addons {
+		display: none;
+	}
+
 	.lsk#portfolio {
 		.portfolio .mix {
 			width: 47%;
@@ -429,9 +450,14 @@ body {
 			margin-bottom: 20px;
 		}
 	}
+
+	.site-info {
+		display: none;
+	}
+
 	.has-pf {
-	text-align: center;
-}
+		text-align: center;
+	}
 
 	.lsk#portfolio .portfolio .mix .thumb-container img {
 		width: 100%;
@@ -439,15 +465,12 @@ body {
 }
 
 
-		body.ie .lsk#portfolio .portfolio .mix {
-
-	}
+body.ie .lsk#portfolio .portfolio .mix {}
 
 
-
-
-
-
-
-
-
+.bx-flex {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 4px 0;
+}

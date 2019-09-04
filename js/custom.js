@@ -1,36 +1,36 @@
 (function ($) {
 	var body = $('body');
-		var isMobile = {
-		Android: function() {
+	var isMobile = {
+		Android: function () {
 			return navigator.userAgent.match(/Android/i);
 		},
-		BlackBerry: function() {
+		BlackBerry: function () {
 			return navigator.userAgent.match(/BlackBerry/i);
 		},
-		iOS: function() {
+		iOS: function () {
 			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
 		},
-		Opera: function() {
+		Opera: function () {
 			return navigator.userAgent.match(/Opera Mini/i);
 		},
-		Windows: function() {
+		Windows: function () {
 			return navigator.userAgent.match(/IEMobile/i);
 		},
-		any: function() {
+		any: function () {
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
-	
-	if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+
+	if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0) {
 		body.addClass('ie');
 	} else {
 		body.addClass('no-ie');
-		
+
 	}
 
 	$(window).on("load", function () {
 
-		if($(window).width() > 600) {
+		if ($(window).width() > 600) {
 			$(".scrollon").mCustomScrollbar({
 				axis: "y",
 				scrollButtons: {
@@ -45,34 +45,34 @@
 			});
 
 
-		$("#accordion .panel-body").mCustomScrollbar({
-			setHeight: 300,
-			theme: "dark-3"
-		});
+			$("#accordion .panel-body").mCustomScrollbar({
+				setHeight: 300,
+				theme: "dark-3"
+			});
 
-		$("#myTab .tab-pane").mCustomScrollbar({
-			setHeight: 280,
-			theme: "inset-2-dark"
-		});
+			$("#myTab .tab-pane").mCustomScrollbar({
+				setHeight: 280,
+				theme: "inset-2-dark"
+			});
 
 
-		$(".scrollTo a").click(function () {
-			if ($(this).attr('href') == "#top") {	
-				var elID = ".entry-title";
-				$(".scrollon").mCustomScrollbar("scrollTo", elID);
-			} else {
-				if ($(this).attr('href').indexOf("#") >= 0) {
-					$(".scrollon").mCustomScrollbar("scrollTo", $(this).attr('href'));
+			$(".scrollTo a").click(function () {
+				if ($(this).attr('href') == "#top") {
+					var elID = ".entry-title";
+					$(".scrollon").mCustomScrollbar("scrollTo", elID);
+				} else {
+					if ($(this).attr('href').indexOf("#") >= 0) {
+						$(".scrollon").mCustomScrollbar("scrollTo", $(this).attr('href'));
+					}
 				}
-			}
-		});
+			});
 
-		}//end window size
+		} //end window size
 
 		$('.delete, .modal-background, .modal-card-foot button.button').click(function () {
 			$('.modal').removeClass('is-active');
 		});
-		
+
 		$('.loading-spinner').css('display', 'none');
 
 	}); //window on load
@@ -81,14 +81,16 @@
 		//console.log('섬네일생성');
 		$(data).each(function (index, value) {
 			var catName = '';
-			if(value.category == 'cat1') {
+			if (value.category == 'cat1') {
 				catName = '<i class="fab fa-wordpress-simple"></i> <i class="far fa-file-code"></i> 제작 ';
-			}else if(value.category == 'cat2') {
-				catName = '<i class="fab fa-wordpress-simple"></i> 유지보수 ';			
-			}else if(value.category == 'cat3') {
-				catName = '<i class="far fa-file-code"></i> 디자인/퍼블/기타';			
-			}else if(value.category == 'cat1 cat2') {
-				catName = '<i class="fab fa-wordpress-simple"></i> <i class="far fa-file-code"></i> 제작/유지보수';			
+			} else if (value.category == 'cat2') {
+				catName = '<i class="fab fa-wordpress-simple"></i> 유지보수 ';
+			} else if (value.category == 'cat3') {
+				catName = '<i class="far fa-file-code"></i> 디자인/퍼블/기타';
+			} else if (value.category == 'cat1 cat2') {
+				catName = '<i class="fab fa-wordpress-simple"></i> <i class="far fa-file-code"></i> 제작/유지보수';
+			} else if (value.category == 'cat1 cat3') {
+				catName = '<i class="fab fa-wordpress-simple"></i> <i class="far fa-file-code"></i> 디자인/퍼블/제작';
 			}
 			var html = '<div class="mix ' + value.category + '" id="ctl-' + value.id + '">';
 			html += '<div class="thumb-container" style="background-image:url(' + value.img1 + ')"></div>';
@@ -154,17 +156,17 @@
 			}
 		});
 	}
-	
+
 	function noRef() {
-		$('.modal').on('click', 'a', function(e) {
+		$('.modal').on('click', 'a', function (e) {
 			href = e.target.getAttribute('href')
-			if(href && href.hostname != window.location.hostname) {
-				e.preventDefault();		
+			if (href && href.hostname != window.location.hostname) {
+				e.preventDefault();
 				var dotw = window.open("", "dot_window");
-  			dotw.document.open();
-  			dotw.document.writeln('<script type="text/javascript">window.location = "' + this.href + '";</script>');
-  			dotw.document.close();
-			}  
+				dotw.document.open();
+				dotw.document.writeln('<script type="text/javascript">window.location = "' + this.href + '";</script>');
+				dotw.document.close();
+			}
 		});
 	}
 
@@ -180,19 +182,19 @@
 			noRef();
 		}
 	});
-	
+
 	function alertTime() {
 		var date = new Date();
 		var hours = date.getHours();
 		var minutes = date.getMinutes();
 		var seconds = date.getSeconds();
-		hours = (hours>12) ? hours - 12 : hours;
-		hours = (hours<10) ? '0'+hours : hours;
-		minutes = (minutes<10) ? '0'+minutes : minutes;
-		seconds = (seconds<10) ? '0'+seconds : seconds;
-		$('#currenttime').text(hours +':'+ minutes +':'+ seconds);
+		hours = (hours > 12) ? hours - 12 : hours;
+		hours = (hours < 10) ? '0' + hours : hours;
+		minutes = (minutes < 10) ? '0' + minutes : minutes;
+		seconds = (seconds < 10) ? '0' + seconds : seconds;
+		$('#currenttime').text(hours + ':' + minutes + ':' + seconds);
 	}
 
 	setInterval(alertTime, 1000);
-	
+
 })(jQuery);

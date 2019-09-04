@@ -1,59 +1,58 @@
 @charset "UTF-8";
-/* line 3, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 3, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 html {
   font-size: 14px; }
 
-/* line 7, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 7, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .copy {
   line-height: 1;
   text-align: right; }
 
-/* line 11, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 12, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 #clock {
-  line-height: 2.4rem;
   letter-spacing: 1px;
   display: block; }
 
-/* line 17, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 17, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .m-ovh {
   overflow: hidden; }
 
-/* line 18, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 21, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .icon,
 .is-title-vline {
   line-height: 1; }
 
-/* line 25, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 28, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .modal {
   transform: scale(0.1);
   opacity: 0;
   transition: all .2s linear; }
-  /* line 30, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 33, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .modal.is-active {
     opacity: 1;
     transform: scale(1); }
-  /* line 36, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 39, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .modal .modal-card .modal-card-title {
     font-size: 1rem; }
-  /* line 41, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 45, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .modal .modal-card .modal-card-body .aja > p {
     line-height: 1.7;
     margin-bottom: 15px; }
-  /* line 46, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 51, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .modal .modal-card .modal-card-body img {
     display: block;
     max-width: 100%;
     border-radius: 3px;
     margin: 20px auto; }
-  /* line 52, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 58, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .modal .modal-card .modal-card-body ul {
     list-style: disc;
     padding-left: 1.5rem; }
-  /* line 57, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 64, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .modal .modal-card footer.modal-card-foot {
     justify-content: center !important; }
 
-/* line 63, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 70, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .loading-spinner {
   position: fixed;
   z-index: 1000;
@@ -63,55 +62,55 @@ html {
   width: 100%;
   background: rgba(255, 255, 255, 0.9) url("/img/ajax-loader.gif") 50% 50% no-repeat; }
 
-/* line 73, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 80, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .columns.main {
   margin-bottom: 0; }
 
-/* line 78, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 85, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .card {
   height: 640px; }
-  /* line 82, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 89, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .card ul.menu-list {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-    /* line 87, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 94, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card ul.menu-list > li {
       margin-bottom: 13px; }
-    /* line 91, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 98, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card ul.menu-list > li > a {
       border: 1px solid transparent;
       border-left: 2px solid #c2c2c2;
       font-size: 1.3rem; }
-      /* line 96, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 103, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .card ul.menu-list > li > a:hover {
         border-top: 1px solid #c2c2c2;
         border-bottom: 1px solid #c2c2c2;
         border-right: 1px solid #c2c2c2; }
-      /* line 102, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 109, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .card ul.menu-list > li > a span {
         font-size: 1rem; }
-  /* line 108, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 115, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .card ul.event-list {
     display: block;
     list-style-type: none;
     padding: 0;
     margin: 0; }
-    /* line 114, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 121, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card ul.event-list .event {
       position: relative;
       padding: 0 0 20px 25px; }
-      /* line 116, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 123, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .card ul.event-list .event > h5 span {
         margin-left: 6px; }
-      /* line 120, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 128, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .card ul.event-list .event > p {
         font-size: 0.8rem;
         line-height: 1; }
-      /* line 124, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 133, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .card ul.event-list .event > ul {
         margin-left: 20px; }
-      /* line 131, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 140, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .card ul.event-list .event:before {
         content: "";
         position: absolute;
@@ -120,7 +119,7 @@ html {
         left: 4px;
         width: 2px;
         background: #c2c2c2; }
-      /* line 141, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 150, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .card ul.event-list .event:after {
         content: "";
         position: absolute;
@@ -130,13 +129,13 @@ html {
         height: 10px;
         border-radius: 50%;
         background: #265CDC; }
-  /* line 155, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 164, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .card .card-footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 161, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 170, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card .card-footer:before {
       content: "바로연결하기";
       position: absolute;
@@ -145,31 +144,31 @@ html {
       display: inline-block;
       left: 0;
       right: 0; }
-    /* line 171, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 180, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card .card-footer a.kakaome {
       background: url(/img/me_appicon_kr.png) 0 0 no-repeat;
       text-indent: -9999px;
       background-position: center;
       background-size: 20px; }
-    /* line 178, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 187, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card .card-footer a:hover {
       background-color: #f8ffd5; }
 
-/* line 187, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 196, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .lsk {
   padding: 30px 0; }
-  /* line 191, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 200, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .lsk .progress {
     margin-bottom: 0.7rem; }
-  /* line 195, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 204, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .lsk .tag {
     margin-bottom: 10px; }
-  /* line 202, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 211, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .lsk#portfolio .portfolio {
     overflow: hidden;
     padding-left: 2px;
     padding-right: 2px; }
-    /* line 207, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 216, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .lsk#portfolio .portfolio .mix {
       float: left;
       overflow: hidden;
@@ -184,10 +183,10 @@ html {
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
       transition: translate .18s, box-shadow .18s;
       cursor: pointer; }
-      /* line 223, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 232, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .lsk#portfolio .portfolio .mix:hover {
         box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6); }
-      /* line 227, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 236, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .lsk#portfolio .portfolio .mix > a {
         position: absolute;
         display: block;
@@ -197,43 +196,43 @@ html {
         bottom: 0;
         z-index: 999;
         text-indent: -9999px; }
-      /* line 238, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 247, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .lsk#portfolio .portfolio .mix .thumb-container {
         overflow: hidden;
         height: 140px;
         border-bottom: 1px solid #dddddd;
         background-size: cover;
         background-position: top center; }
-        /* line 244, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+        /* line 254, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
         .lsk#portfolio .portfolio .mix .thumb-container img {
           display: block;
           max-width: 100%;
           height: auto; }
-      /* line 251, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 261, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .lsk#portfolio .portfolio .mix .portfolio-description {
         border-top: 1px solid #b9b9b9;
         padding: 1.2rem .8rem; }
-        /* line 255, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+        /* line 265, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
         .lsk#portfolio .portfolio .mix .portfolio-description p {
           line-height: 1.4rem;
           margin: 0; }
-          /* line 259, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+          /* line 269, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
           .lsk#portfolio .portfolio .mix .portfolio-description p.ti-subject {
             color: #343434;
             height: 40px;
             font-weight: bold;
             margin-bottom: 6px;
             text-overflow: ellipsis; }
-          /* line 266, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+          /* line 277, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
           .lsk#portfolio .portfolio .mix .portfolio-description p.ti-period {
             font-size: 0.9rem;
             margin-bottom: 6px; }
 
-/* line 278, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 289, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .column .is-danger {
   overflow: hidden; }
 
-/* line 282, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 293, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 body {
   background: linear-gradient(-45deg, #6f8bca, #23D5AB); }
 
@@ -261,36 +260,36 @@ body {
   100% {
     background-position: 0% 50%; } }
 
-/* line 331, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+/* line 348, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
 .hero.is-success {
   background-color: transparent; }
 
 @media (min-width: 1280px) {
-  /* line 337, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 354, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .lsk#portfolio .portfolio .mix {
     width: 31.2%; } }
 
 @media (max-width: 1024px) {
-  /* line 344, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 361, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .desktop {
     display: none; } }
 
 @media (max-width: 960px) {
-  /* line 351, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 368, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .lsk#portfolio .portfolio .mix {
     width: 30%; }
-  /* line 355, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 373, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   body.ie .portfolio {
     max-width: 800px; } }
 
 @media (max-width: 850px) {
-  /* line 363, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 381, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   body.ie .portfolio {
     max-width: 620px; }
-  /* line 366, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 385, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   body.ie .buttons.has-addons {
     display: none; }
-  /* line 369, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 390, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .lsk#portfolio .portfolio .mix {
     width: 47%;
     display: inline-block;
@@ -298,40 +297,40 @@ body {
     margin-bottom: 20px; } }
 
 @media (max-width: 768px) {
-  /* line 379, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 400, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .hide-mobile {
     display: none; }
-  /* line 383, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 404, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .copy {
     text-align: center; }
-  /* line 387, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 408, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .modal-card {
     width: 85%; }
-  /* line 391, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 412, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .card {
     height: auto; }
-    /* line 394, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 415, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card .card-image {
       display: none; }
-    /* line 398, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 419, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card .profile {
       text-align: center;
       border-top: 3px solid #454545; }
-      /* line 402, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+      /* line 423, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
       .card .profile h4 {
         margin-bottom: 50px; }
-    /* line 407, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 428, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card .content.scrollTo {
       display: none; }
-    /* line 411, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 432, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .card .card-footer {
       margin-top: 30px; } }
 
 @media (max-width: 612px) {
-  /* line 420, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 441, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .lsk#portfolio {
     text-align: center; }
-    /* line 423, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+    /* line 444, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
     .lsk#portfolio .portfolio .mix {
       width: 100%;
       display: inline-block;
@@ -339,11 +338,21 @@ body {
       overflow: hidden;
       margin: 0;
       margin-bottom: 20px; }
-  /* line 432, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 454, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
+  .site-info {
+    display: none; }
+  /* line 458, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .has-pf {
     text-align: center; }
-  /* line 436, D:/hosts/github/monaco21.github.io/css/portfolio.scss */
+  /* line 462, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
   .lsk#portfolio .portfolio .mix .thumb-container img {
     width: 100%; } }
+
+/* line 471, C:/_Me/Hosts/퍼블/github/monaco21.github.io/css/portfolio.scss */
+.bx-flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 4px 0; }
 
 /*# sourceMappingURL=portfolio.css.map */
