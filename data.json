@@ -1,5 +1,18 @@
 [
 	{
+		"id": 13,
+		"category": "cat1 cat3",
+		"title": "경기도청 인재개발원 머신러닝 시스템 구축 밎 사이트 리뉴얼",
+		"period": "2019.09~2019.12",
+		"teck": "html, css, javascript, java",
+		"charge": "웹기획, 웹디자인, 퍼블리싱, ",
+		"description": "경기도청 산하 인재개발원 사이트 러닝머신 시스템 구축, 사이트 리뉴얼.<br>12월중 리뉴얼 될 인재개발원 사이트 웹디자인및 웹퍼블리싱과 프론트엔드 개발 등을 담당중입니다.<ul><li>웹디자인 (메인, 서브페이지, 관리자페이지)</li> <li>퍼블리싱 (메인, 서브페이지, 관리자페이지)</li> <li>스크립트 개발(실시간인기과정외)</li><li>java, javascript ajax 연동</li></ul>",
+		"url": "https://edu.gg.go.kr/",
+		"img1": "/img/edu-gg-thumb-s.jpg",
+		"img2": "/img/edu-gg-thumb.jpg",
+		"img3": ""
+  },
+	{
 		"id": 1,
 		"category": "cat1 cat3",
 		"title": "한국도로공사 아산천안지부 사이트제작",
