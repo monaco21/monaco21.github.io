@@ -1,13 +1,26 @@
 [
 	{
+		"id": 5224,
+		"category": "cat1 cat3",
+		"title": "LG.COM Integrated Solutions VR콘텐츠제작",
+		"period": "2019.12~2020.01",
+		"teck": "html, css, javascript",
+		"charge": "krpano, 웹접근성, 자바스크립트",
+		"description": "LG.COM VR콘텐츠 제작및 웹접근성작업,구조변경작업.<br>LG CNS에서 요청한 작업입니다.<ul><li>VR KRPANO 구조변경</li> <li>자바스크립트를 이용한 VR과 콘텐츠 연동작업</li> <li>자바스크립트를 이용한 웹접근성 을 위한 콘텐츠 생성작업</li></ul>",
+		"url": "https://www.lg.com/global/business/integrated-solutions",
+		"img1": "/img/lg-integrated-solutions-thumb.jpg",
+		"img2": "/img/lg-integrated-solutions.jpg",
+		"img3": ""
+  },
+	{
 		"id": 13,
 		"category": "cat1 cat3",
 		"title": "경기도청 인재개발원 머신러닝 시스템 구축 밎 사이트 리뉴얼",
 		"period": "2019.09~2019.12",
 		"teck": "html, css, javascript, java",
-		"charge": "웹기획, 웹디자인, 퍼블리싱, ",
+		"charge": "웹기획, 웹디자인, 퍼블리싱",
 		"description": "경기도청 산하 인재개발원 사이트 러닝머신 시스템 구축, 사이트 리뉴얼.<br>12월중 리뉴얼 될 인재개발원 사이트 웹디자인및 웹퍼블리싱과 프론트엔드 개발 등을 담당중입니다.<ul><li>웹디자인 (메인, 서브페이지, 관리자페이지)</li> <li>퍼블리싱 (메인, 서브페이지, 관리자페이지)</li> <li>스크립트 개발(실시간인기과정외)</li><li>java, javascript ajax 연동</li></ul>",
-		"url": "https://edu.gg.go.kr/",
+		"url": "https://edu.gg.go.kr/front/home/MainAction.do?method=index",
 		"img1": "/img/edu-gg-thumb-s.jpg",
 		"img2": "/img/edu-gg-thumb.jpg",
 		"img3": ""
@@ -16,7 +29,7 @@
 		"id": 1,
 		"category": "cat1 cat3",
 		"title": "한국도로공사 아산천안지부 사이트제작",
-		"period": "2019.07~2019.08",
+		"period": "2019.06~2019.08",
 		"teck": "Wordpress, php, html, css, javascript",
 		"charge": "웹디자인 전체담당, 퍼블리싱 전체담당, 콘텐츠 전체담당, 워드프레스 테마제작",
 		"description": "한국도로공사에서 추진하는 아산~천안간 고속도로사업의 홈보용 대민사이트개발건입니다. 별도 인력이 배정되지 않은 관계로 기획부터 디자인, 퍼블리싱, 개발업무까지 사이트제작 전체를 담당했습니다.<br><ul><li>워드프레스 테마제작(php 플래임워크 사용)</li> <li>퍼블리싱담당(bulma 사용)</li> <li>스크립트 개발(날씨 API등등)</li><li>SSL적용, 웹접근성 인증 통과.</li></ul>",
